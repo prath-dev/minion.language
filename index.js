@@ -10,7 +10,7 @@ function error() {
 function Translate() {
 
     if (input.value) {
-        let url = `https://api.funtranslations.com/translate/minion.json?text=${inputText.value}`;
+        let url = `https://api.funtranslations.com/translate/minion.json?text=${input.value}`;
         console.log(url);
         fetch(url)
             .then(data => data.json())
